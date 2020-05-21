@@ -87,6 +87,7 @@
 .div6 {
   grid-area: 4 / 2 / 6 / 5;
   line-height: 1.5;
+
   width: 90%;
   margin: 10%;
   display: flex;
@@ -96,6 +97,7 @@
 .div6 .lefty {
   width: 50%;
   padding-top: 20px;
+  font-size: 20px;
 }
 
 .div6 i {
@@ -105,6 +107,7 @@
 .div6 .righty {
   width: 50%;
   padding-top: 20px;
+  font-size: 18px;
 }
 
 .div7 {
@@ -159,11 +162,13 @@
 .div10 .lefty {
   width: 50%;
   padding-top: 20px;
+  font-size: 20px;
 }
 
 .div10 .righty {
   width: 50%;
   padding-top: 20px;
+  font-size: 18px;
 }
 
 .div10 i {
@@ -218,10 +223,12 @@
 
 .div14 .lefty {
   width: 50%;
+  font-size: 18px;
 }
 
 .div14 .righty {
   width: 50%;
+  font-size: 18px;
 }
 
 @media (max-width: 576px) {
