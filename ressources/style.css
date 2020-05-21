@@ -2,9 +2,7 @@
 .parent {
 display: grid;
 grid-template-columns: repeat(6, 300px);
-grid-template-rows: repeat(16, 100px);
-grid-column-gap: 0px;
-grid-row-gap: 0px;
+grid-template-rows: repeat(17, 100px);
 }
 
 .div1 {
@@ -217,3 +215,102 @@ grid-row-gap: 0px;
 .div14 .righty {
   width: 50%;
  }
+@media (max-width: 576px) {
+.parent {
+  display: flex;
+  flex-direction: column;
+}
+.div1 {
+  order: 1;
+}
+.div2 {
+  order: 2;
+}
+.div3 {
+  order: 13;
+}
+.div4 {
+  order: 3;
+}
+.div5 {
+  order: 14;
+}
+.div6 {
+  order: 4;
+}
+.div7 {
+  order: 11;
+}
+.div8 {
+  order: 5;
+}
+.div9 {
+  order: 12;
+}
+.div10 {
+  order: 6;
+}
+.div11 {
+  order: 9;
+}
+.div12 {
+  order: 7;
+}
+.div13 {
+  order: 10;
+}
+.div14 {
+  order: 8;
+}
+
+}/*fin media queries small devices Smartphones (576px)*/
+
+@media (max-width: 768px) {
+.parent {
+  display: flex;
+  flex-direction: column;
+}
+.div1 {
+  order: 1;
+}
+.div2 {
+  order: 2;
+}
+.div3 {
+  order: 13;
+}
+.div4 {
+  order: 3;
+}
+.div5 {
+  order: 14;
+}
+.div6 {
+  order: 4;
+}
+.div7 {
+  order: 11;
+}
+.div8 {
+  order: 5;
+}
+.div9 {
+  order: 12;
+}
+.div10 {
+  order: 6;
+}
+.div11 {
+  order: 9;
+}
+.div12 {
+  order: 7;
+}
+.div13 {
+  order: 10;
+}
+.div14 {
+  order: 8;
+}
+
+}/*fin media queries medium devices (tablets)
