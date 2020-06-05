@@ -1,13 +1,25 @@
 /*! minireset.css v0.0.6 | MIT License | github.com/jgthms/minireset.css */html,body,p,ol,ul,li,dl,dt,dd,blockquote,figure,fieldset,legend,textarea,pre,iframe,hr,h1,h2,h3,h4,h5,h6{margin:0;padding:0}h1,h2,h3,h4,h5,h6{font-size:100%;font-weight:normal}ul{list-style:none}button,input,select,textarea{margin:0}html{box-sizing:border-box}*,*::before,*::after{box-sizing:inherit}img,video{height:auto;max-width:100%}iframe{border:0}table{border-collapse:collapse;border-spacing:0}td,th{padding:0}td:not([align]),th:not([align]){text-align:left}
+html {
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
 
 .parent {
-  display: grid;
-  grid-template-columns: repeat(6, 300px);
-  grid-template-rows: repeat(17, 100px);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+aside {
+  min-height: 1000px;
+  width: 300px;
+  position: absolute;
+  float: left;
 }
 
 .div1 {
-  grid-area: 1 / 1 / 3 / 2;
+  min-height: 40vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -15,36 +27,41 @@
 }
 
 .div1 img {
-  border-radius: 75px;
+  width: 180px;
+  border-radius: 100px;
+  -webkit-border-radius: 100px;
+  -moz-border-radius: 100px;
+  -ms-border-radius: 100px;
+  -o-border-radius: 100px;
 }
 
-.div2 {
-  grid-area: 1 / 2 / 3 / 5;
+header {
   width: 90%;
-  margin: 10%;
+  margin-left: 30%;
+  margin-top: 6%;
   line-height: 1.5;
 }
 
-.div2 h1 {
+header h1 {
   font-size: 46px;
 }
 
-.div2 h1 span {
+header h1 span {
   color: #00695C;
   text-decoration: none;
 }
 
-.div2 h2 {
+header h2 {
   font-size: 36px;
 }
 
-.div2 h2 span {
+header h2 span {
   color: #00695C;
   text-decoration: underline;
 }
 
 .div3 {
-  grid-area: 3 / 1 / 4 / 2;
+  min-height: 10vh;
   background-color: #FFF9C4;
   color: #00695C;
   display: flex;
@@ -54,7 +71,6 @@
 }
 
 .div4 {
-  grid-area: 3 / 2 / 4 / 5;
   width: 90%;
   margin: 10%;
 }
@@ -71,7 +87,7 @@
 }
 
 .div5 {
-  grid-area: 4 / 1 / 8 / 2;
+  min-height: 50vh;
   line-height: 1.5;
   display: flex;
   justify-content: center;
@@ -85,9 +101,7 @@
 }
 
 .div6 {
-  grid-area: 4 / 2 / 6 / 5;
   line-height: 1.5;
-
   width: 90%;
   margin: 10%;
   display: flex;
@@ -111,7 +125,7 @@
 }
 
 .div7 {
-  grid-area: 8 / 1 / 9 / 2;
+  min-height: 10vh;
   background-color: #FFF9C4;
   color: #00695C;
   display: flex;
@@ -121,7 +135,6 @@
 }
 
 .div8 {
-  grid-area: 9 / 2 / 10 / 5;
   width: 90%;
   margin: 5% 10%;
 }
@@ -138,7 +151,7 @@
 }
 
 .div9 {
-  grid-area: 9 / 1 / 14 / 2;
+  min-height: 50vh;
   line-height: 1.5;
   display: flex;
   justify-content: center;
@@ -150,7 +163,6 @@
 }
 
 .div10 {
-  grid-area: 9 / 2 / 11 / 5;
   line-height: 1.5;
   width: 90%;
   margin: 10%;
@@ -176,7 +188,7 @@
 }
 
 .div11 {
-  grid-area: 14 / 1 / 15 / 2;
+  min-height: 10vh;
   background-color: #FFF9C4;
   color: #00695C;
   display: flex;
@@ -186,7 +198,6 @@
 }
 
 .div12 {
-  grid-area: 14 / 2 / 15 / 5;
   width: 90%;
   margin: 10%;
 }
@@ -203,7 +214,7 @@
 }
 
 .div13 {
-  grid-area: 15 / 1 / 17 / 2;
+  min-height: 10vh;
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -222,7 +233,6 @@
 }
 
 .div14 {
-  grid-area: 15 / 2 / 17 / 5;
   line-height: 1.5;
   width: 90%;
   margin: 10%;
