@@ -208,8 +208,17 @@
   justify-content: space-around;
   align-items: center;
   background-color: #00695C;
+}
+
+.div13 i {
+  font-size: 28px;
   color: #FFF9C4;
-  font-size: 32px;
+  border: solid 2px #FFF9C4;
+  border-radius: 100px;
+  -webkit-border-radius: 100px;
+  -moz-border-radius: 100px;
+  -ms-border-radius: 100px;
+  -o-border-radius: 100px;
 }
 
 .div14 {
