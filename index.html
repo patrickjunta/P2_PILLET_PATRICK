@@ -11,18 +11,19 @@
 </head>
 
 <body>
+<div class="container">
 
   <aside id="sidebar"> 
 
-    <div class="div1 profilePic">
+    <div class="div1 divbox" id="profilePic">
       <img src="ressources/images/prof pic avion.jpg" alt="profile pic">
     </div>
 
-    <div class="div3">
+    <div class="div3 divbox" id="contactTitle">
       <h2>Contact</h2>
     </div>
 
-    <div class="div5">
+    <div class="div5 divbox" id="contact">
       <nav>
         <ul>
           <li>Adresse<br>Paris, France</li>
@@ -34,22 +35,22 @@
       </nav>
     </div>
 
-    <div class="div7">
+    <div class="div7 divbox" id="aboutMe">
       <h2>A propos de moi</h2>
     </div>
 
-    <div class="div9">
+    <div class="div9 divbox" id="lorem">
       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod<br>
         tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim <br>
         tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim <br>
         veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea.</p>
     </div>
 
-    <div class="div11">
+    <div class="div11 divbox" id="loisirsTitle">
       <h2>LOISIRS</h2>
     </div>
 
-    <div class="div13">
+    <div class="div13 divbox" id="loisirsIcons">
       <h1><i class="fas fa-code circle icon"></i></h1>
       <h1><i class="fas fa-gamepad circle icon"></i></h1>
       <h1><i class="fas fa-biking circle icon"></i></h1>
@@ -58,21 +59,24 @@
     
   </aside><!-- end of aside id="sidebar"-->
   
-  <div class="parent">
+  <main> 
+    <div class="parent">
 
-    <header class="div2">
+    <header class="div2 divbox" id="jumbotron">
       <h1><span>Patrick </span>Pillet<br>
         <h2><span>Dév</span>eloppeur Web freelance</h2>
+        <img src="ressources/images/prof pic avion.jpg" alt="profile pic">
+
       </header>
 
-    <main>
-      <section class="firstSection formation">
+    
+      <section class="section__one formation">
 
-        <div class="div4">
+        <div class="div4 divbox" id="formationTitle">
           <h2><i class="fas fa-graduation-cap"></i> Formation</h2>
         </div>
     
-        <div class="div6">
+        <div class="div6 divbox">
           <div class="card lefty">
             <h6><i class="far fa-dot-circle"></i>2016 - 2017<br>Paris</h6>
           </div>
@@ -100,8 +104,8 @@
 
       </section>
 
-      <section class="secondSection experience">
-        <div class="div8">
+      <section class="section__two experience">
+        <div class="div8 divbox" id="experienceTitle">
           <h2><i class="fas fa-briefcase"></i> Expérience Professionelle</h2>
         </div>
     
@@ -131,8 +135,8 @@
 
       </section>
 
-      <section class="thirdSection experience">
-        <div class="div12">
+      <section class="section__three experience">
+        <div class="div12 divbox" id="recommandations">
           <h2><i class="fas fa-pencil-alt"></i> Recommandations</h2>
         </div>
     
@@ -153,12 +157,14 @@
         <!--fin div 14-->
       </section>
 
-      
+      </div><!--fin div .parent-->
     </main>
 
-  </div>
-  <!--fin div .parent-->
 
+  </div><!--fin div .container -->
+  
+
+  
 </body>
 
 </html>
