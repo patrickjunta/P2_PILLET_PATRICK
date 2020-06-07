@@ -269,15 +269,8 @@ section {
 }
 
 @media (max-width: 576px) {
-  /* aside{
-    display: flex;
-    flex-direction: column;
-  } */
-  /* .container {
-    display: flex;
-    flex-direction: column;
-  } */
   .container {
+    width: 100%;
     display: flex;
     flex-direction: column;
   }
@@ -286,100 +279,200 @@ section {
     flex-direction: column;
     justify-content: center;
   }
-  header img {
-    width: 70%;
-    margin: auto;
-    border-radius: 100px;
-    -webkit-border-radius: 100px;
-    -moz-border-radius: 100px;
-    -ms-border-radius: 100px;
-    -o-border-radius: 100px;
-  }
-  #jumbotron{
+  #jumbotron{ /*header avec image pour small devices*/
     order: 1;
   }
-  #profilePic{
-    order: 2;
-    display: none;
+  #jumbotron h1 {
+    font-size: 44px;
   }
-  .section__one{
+  #jumbotron h2 {
+    font-size: 34px;
+  }
+  #jumbotron img {
+    width: 70%;
+    margin: auto;
+    border-radius: 150px;
+    -webkit-border-radius: 150px;
+    -moz-border-radius: 150px;
+    -ms-border-radius: 150px;
+    -o-border-radius: 150px;
+  } 
+
+   #section__one{ /*section formation */
+    order: 2;
+  }
+  #formationTitle h2{ /*titre section formation*/
+    font-size: 12px;
+  }
+  .lefty h3{
+    font-size: 24px;
+    font-weight: bold;
+  }
+  .lefty h4{
+    font-size: 24px;
+  }
+  .lefty h6{
+    font-size: 20px;
+  }
+  
+  .righty h3{
+    font-size: 24px;
+    font-weight: bold;
+  }
+  .righty h4{
+    font-size: 24px;
+  }
+  .righty h6{
+    font-size: 20px;
+  }
+  .rigthty p{
+    font-size: 18px;
+  }
+  
+  #section__two{ /*section experience*/
     order: 3;
   }
-  .section__two{
+  #experienceTitle h2{ /*titre section experience*/
+    font-size: 44px;
+  }
+  .section__three{ /*section recommandations*/
     order: 4;
   }
-  .section__three{
-    order: 5;
+  #recommandationsTitle h2{ /*titre section recommandations*/
+    font-size: 44px;
   }
-  #sidebar{
-    order: 6;
+  #sidebar{ /*sidebar*/
+    order: 5;
     width: 100%;
+  }
+  #contactTitle h2{
+    font-size: 64px;
+  }
+  #contact li { /*contenu contact*/
+    font-size: 42px;
+  }
+  #aboutMe h2{ /*titre A propos de moi*/
+    font-size: 64px;
+  }
+  #lorem p{ /*contenu A propos de moi*/
+    text-align: center;
+    font-size: 32px;
+  }
+  #loisirsTitle h2{ 
+    font-size: 64px;
+  }
+  #loisirsIcons h1 i{
+    font-size: 72px;
+  }
+  #profilePic{ /*image de la sidebar */
+    display: none;
   }
   
 }
 /*fin media queries small devices Smartphones (576px)*/
 
 @media (max-width: 768px) {
+  
   .container {
+    width: 100%;
     display: flex;
     flex-direction: column;
   }
+  header{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  header h1 {
+    font-size: 72px;
+  }
+  header h2 {
+    font-size: 44px;
+  }
+  
+  header img {
+    width: 70%;
+    margin: auto;
+    border-radius: 250px;
+    -webkit-border-radius: 250px;
+    -moz-border-radius: 250px;
+    -ms-border-radius: 250px;
+    -o-border-radius: 250px;
+} 
 
-  .div1 {
+  #jumbotron{ /*header avec image pour small devices*/
     order: 1;
   }
-
-  .div2 {
+  
+   .section__one{ /*section formation */
     order: 2;
   }
-
-  .div3 {
-    order: 13;
+  #formationTitle h2{ /*titre section formation*/
+    font-size: 44px;
   }
-
-  .div4 {
+  .lefty h3{
+    font-size: 24px;
+    font-weight: bold;
+  }
+  .lefty h4{
+    font-size: 24px;
+  }
+  .lefty h6{
+    font-size: 20px;
+  }
+  
+  .righty h3{
+    font-size: 24px;
+    font-weight: bold;
+  }
+  .righty h4{
+    font-size: 24px;
+  }
+  .righty h6{
+    font-size: 20px;
+  }
+  .rigthty p{
+    font-size: 18px;
+  }
+  
+  .section__two{ /*section experience*/
     order: 3;
   }
-
-  .div5 {
-    order: 14;
+  #experienceTitle h2{ /*titre section experience*/
+    font-size: 44px;
   }
-
-  .div6 {
+  .section__three{ /*section recommandations*/
     order: 4;
   }
-
-  .div7 {
-    order: 11;
+  #recommandationsTitle h2{ /*titre section recommandations*/
+    font-size: 44px;
   }
-
-  .div8 {
+  #sidebar{ /*sidebar*/
     order: 5;
+    width: 100%;
   }
-
-  .div9 {
-    order: 12;
+  #contactTitle h2{
+    font-size: 64px;
   }
-
-  .div10 {
-    order: 6;
+  #contact li { /*contenu contact*/
+    font-size: 42px;
   }
-
-  .div11 {
-    order: 9;
+  #aboutMe h2{ /*titre A propos de moi*/
+    font-size: 64px;
   }
-
-  .div12 {
-    order: 7;
+  #lorem p{ /*contenu A propos de moi*/
+    text-align: center;
+    font-size: 32px;
   }
-
-  .div13 {
-    order: 10;
+  #loisirsTitle h2{ 
+    font-size: 64px;
   }
-
-  .div14 {
-    order: 8;
+  #loisirsIcons h1 i{
+    font-size: 72px;
   }
+  #profilePic{ /*image de la sidebar */
+    display: none;
+  }
+  
 }
-
-/*fin media queries medium devices (tablets)
+/*fin media queries medium devices tablets (768px)*/
