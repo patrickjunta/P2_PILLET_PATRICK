@@ -29,7 +29,7 @@ html {
   -o-border-radius: 100px;
 }
 .div3 {
-  min-height: 20vh;
+  min-height: 15vh;
   background-color: #FFF9C4;
   color: #00695C;
   display: flex;
@@ -39,7 +39,7 @@ html {
 }
 
 .div5 {
-  min-height: 100vh;
+  min-height: 90vh;
   line-height: 1.5;
   display: flex;
   justify-content: center;
@@ -53,17 +53,18 @@ html {
 }
 
 .div7 {
-  min-height: 20vh;
+  text-align: center;
+  min-height: 15vh;
   background-color: #FFF9C4;
   color: #00695C;
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 36px;
+  font-size: 30px;
 }
 
 .div9 {
-  min-height: 100vh;
+  min-height: 90vh;
   line-height: 1.5;
   display: flex;
   justify-content: center;
@@ -75,17 +76,17 @@ html {
 }
 
 .div11 {
-  min-height: 20vh;
+  min-height: 15vh;
   background-color: #FFF9C4;
   color: #00695C;
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 36px;
+  font-size: 30px;
 }
 
 .div13 {
-  min-height: 40vh;
+  min-height: 25vh;
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -104,6 +105,7 @@ html {
 }
 
 header {
+  padding-top: 35px;
   position: sticky;
   border:solid 5px tomato;
   width: 80%;
@@ -112,7 +114,7 @@ header {
 }
 
 header h1 {
-  font-size: 46px;
+  font-size: 52px;
 }
 
 header h1 span {
@@ -121,7 +123,7 @@ header h1 span {
 }
 
 header h2 {
-  font-size: 36px;
+  font-size: 38px;
 }
 
 header h2 span {
@@ -129,6 +131,9 @@ header h2 span {
   text-decoration: underline;
 }
 
+header img{
+  display: none;
+}
 
 
 /* parent container for flexbox use below */
@@ -141,13 +146,13 @@ header h2 span {
 }
 section {
   width: 100%;
-  margin: auto;
   line-height: 1.5;
 }
 
 .div4 {
   width: 90%;
   margin: 10%;
+  padding-top: 30px;
 }
 
 .div4 h2 {
@@ -159,6 +164,7 @@ section {
 .div4 i {
   font-size: 36px;
   color: #00695C;
+  padding-right: 10px;
 }
 
 
@@ -169,21 +175,26 @@ section {
   margin: 10%;
   display: flex;
   flex-wrap: wrap;
+  padding-top: 30px;
 }
-
-.div6 .lefty {
-  width: 50%;
-  padding-top: 20px;
-  font-size: 20px;
-}
-
 .div6 i {
   color: #00695C;
+  padding-right: 10px;
+}
+.div6 h3{
+  padding-top: 30px;
+}
+.div6 h6{
+  padding-top: 30px;
 }
 
-.div6 .righty {
-  width: 50%;
-  padding-top: 20px;
+
+.lefty {
+  width: 40%;
+  font-size: 20px;
+}
+.righty {
+  width: 60%;
   font-size: 18px;
 }
 
@@ -203,9 +214,9 @@ section {
 .div8 i {
   font-size: 36px;
   color: #00695C;
+  padding-right: 10px;
+  padding-top: 30px;
 }
-
-
 
 .div10 {
   line-height: 1.5;
@@ -213,30 +224,22 @@ section {
   margin: 10%;
   display: flex;
   flex-wrap: wrap;
-  padding-top: 50px
-}
-
-.div10 .lefty {
-  width: 50%;
-  padding-top: 20px;
-  font-size: 20px;
-}
-
-.div10 .righty {
-  width: 50%;
-  padding-top: 20px;
-  font-size: 18px;
+  padding-top: 30px;
 }
 
 .div10 i {
   color: #00695C;
 }
-
-
+.div10 h3{
+  padding-top: 30px;
+}
+.div10 h6{
+  padding-top: 30px;
+}
 
 .div12 {
   width: 90%;
-  margin: 10%;
+  margin-left: 10%;
 }
 
 .div12 h2 {
@@ -253,7 +256,7 @@ section {
 .div14 {
   line-height: 1.5;
   width: 90%;
-  margin: 10%;
+  margin-left: 10%;
   display: flex;
   flex-wrap: wrap;
 }
@@ -261,14 +264,16 @@ section {
 .div14 .lefty {
   width: 50%;
   font-size: 18px;
+  margin-top: 5%;
 }
 
 .div14 .righty {
   width: 50%;
   font-size: 18px;
+  margin-top: 5%;
 }
 
-@media (max-width: 576px) {
+@media only screen and (min-device-width : 320px) and (max-device-width: 576px) {
   .container {
     width: 100%;
     display: flex;
@@ -289,6 +294,7 @@ section {
     font-size: 34px;
   }
   #jumbotron img {
+    display: block;
     width: 70%;
     margin: auto;
     border-radius: 150px;
@@ -301,8 +307,24 @@ section {
    #section__one{ /*section formation */
     order: 2;
   }
-  #formationTitle h2{ /*titre section formation*/
-    font-size: 12px;
+  h2{
+    font-size: 30px;
+  }
+  h3{
+    font-size: 24px;
+    font-weight: bold;
+  }
+  h4{
+    font-size: 24px;
+  }
+  h6{
+    font-size: 20px;
+  }
+  p{
+    font-size: 18px;
+  }
+  /*#formationTitle h2{ /*titre section formation*/
+    /* font-size: 30px;
   }
   .lefty h3{
     font-size: 24px;
@@ -328,41 +350,47 @@ section {
   .rigthty p{
     font-size: 18px;
   }
-  
+   */
   #section__two{ /*section experience*/
     order: 3;
   }
-  #experienceTitle h2{ /*titre section experience*/
-    font-size: 44px;
-  }
+  /* #experienceTitle h2{ /*titre section experience*/
+    /* font-size: 30px;
+  }  */
   .section__three{ /*section recommandations*/
     order: 4;
   }
   #recommandationsTitle h2{ /*titre section recommandations*/
-    font-size: 44px;
-  }
+     font-size: 30px;
+  } 
   #sidebar{ /*sidebar*/
     order: 5;
     width: 100%;
   }
-  #contactTitle h2{
-    font-size: 64px;
-  }
-  #contact li { /*contenu contact*/
+  aside h2{
+    text-align: center;
     font-size: 42px;
   }
-  #aboutMe h2{ /*titre A propos de moi*/
-    font-size: 64px;
-  }
-  #lorem p{ /*contenu A propos de moi*/
+  aside p{
     text-align: center;
-    font-size: 32px;
+    font-size: 26px;
   }
-  #loisirsTitle h2{ 
-    font-size: 64px;
+  #contact li { /*contenu contact*/
+    font-size: 26px;
   }
+  /*#aboutMe h2{ /*titre A propos de moi*/
+    /* text-align: center;
+    font-size: 42px;
+  } */
+  /*#lorem p{ /*contenu A propos de moi*/
+    /* text-align: center;
+    font-size: 26px;
+  } */
+  /* #loisirsTitle h2{ 
+    font-size: 42px;
+  } */
   #loisirsIcons h1 i{
-    font-size: 72px;
+    font-size: 58px;
   }
   #profilePic{ /*image de la sidebar */
     display: none;
@@ -371,7 +399,7 @@ section {
 }
 /*fin media queries small devices Smartphones (576px)*/
 
-@media (max-width: 768px) {
+@media screen and (min-device-width: 576px) and (max-device-width: 768px) {
   
   .container {
     width: 100%;
@@ -390,7 +418,8 @@ section {
     font-size: 44px;
   }
   
-  header img {
+  #jumbotron img {
+    display: block;
     width: 70%;
     margin: auto;
     border-radius: 250px;
@@ -472,7 +501,13 @@ section {
   }
   #profilePic{ /*image de la sidebar */
     display: none;
-  }
-  
+  } 
 }
 /*fin media queries medium devices tablets (768px)*/
+
+@media only screen  and (max-width : 1224px) {
+  /* Styles */
+  header img{
+    display: none;
+  }
+}
