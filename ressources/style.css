@@ -11,7 +11,7 @@ html {
   width: 300px;
   float: left;
 }
-.div1 {
+#profilePic {
   min-height: 40vh;
   display: flex;
   justify-content: center;
@@ -19,7 +19,7 @@ html {
   background-color: #00695C;
 }
 
-.div1 img {
+#profilePic img {
   width: 180px;
   border-radius: 100px;
   -webkit-border-radius: 100px;
@@ -27,7 +27,7 @@ html {
   -ms-border-radius: 100px;
   -o-border-radius: 100px;
 }
-.div3 {
+#contactTitle {
   min-height: 15vh;
   background-color: #FFF9C4;
   color: #00695C;
@@ -37,7 +37,7 @@ html {
   font-size: 36px;
 }
 
-.div5 {
+#contactContent {
   min-height: 90vh;
   line-height: 1.5;
   display: flex;
@@ -46,12 +46,12 @@ html {
   background-color: #00695C;
 }
 
-.div5 nav ul li {
+#contactContent nav ul li {
   color: #FFF9C4;
   font-size: 16px;
 }
 
-.div7 {
+#aboutMe {
   text-align: center;
   min-height: 15vh;
   background-color: #FFF9C4;
@@ -62,7 +62,7 @@ html {
   font-size: 30px;
 }
 
-.div9 {
+#lorem {
   min-height: 90vh;
   line-height: 1.5;
   display: flex;
@@ -74,7 +74,7 @@ html {
   padding-left: 10px;
 }
 
-.div11 {
+#loisirsTitle {
   min-height: 15vh;
   background-color: #FFF9C4;
   color: #00695C;
@@ -84,7 +84,7 @@ html {
   font-size: 30px;
 }
 
-.div13 {
+#loisirsIcons {
   min-height: 25vh;
   display: flex;
   justify-content: space-around;
@@ -92,7 +92,7 @@ html {
   background-color: #00695C;
 }
 
-.div13 i {
+#loisirsIcons h1 i{
   font-size: 38px;
   color: #FFF9C4;
   border: solid 2px #FFF9C4;
@@ -146,19 +146,19 @@ section {
   line-height: 1.5;
 }
 
-.div4 {
+#formationTitle {
   width: 90%;
   margin: 10%;
   padding-top: 30px;
 }
 
-.div4 h2 {
+#formationTitle h2 {
   color: black;
   font-size: 36px;
   border-bottom: solid 3px #00695C;
 }
 
-.div4 i {
+#formationTitle i {
   font-size: 36px;
   color: #00695C;
   padding-right: 10px;
@@ -166,7 +166,7 @@ section {
 
 
 
-.div6 {
+#formationContents {
   line-height: 1.5;
   width: 90%;
   margin: 10%;
@@ -174,14 +174,14 @@ section {
   flex-wrap: wrap;
   padding-top: 30px;
 }
-.div6 i {
+#formationContents i {
   color: #00695C;
   padding-right: 10px;
 }
-.div6 h3{
+#formationContents h3{
   padding-top: 30px;
 }
-.div6 h6{
+#formationContents h6{
   padding-top: 30px;
 }
 
@@ -197,25 +197,25 @@ section {
 
 
 
-.div8 {
+#experienceTitle {
   width: 90%;
   margin: 5% 10%;
 }
 
-.div8 h2 {
+#experienceTitle h2 {
   color: black;
   font-size: 36px;
   border-bottom: solid 3px #00695C;
 }
 
-.div8 i {
+#experienceTitle i {
   font-size: 36px;
   color: #00695C;
   padding-right: 10px;
   padding-top: 30px;
 }
 
-.div10 {
+#experienceContents {
   line-height: 1.5;
   width: 90%;
   margin: 10%;
@@ -224,33 +224,33 @@ section {
   padding-top: 30px;
 }
 
-.div10 i {
+#experienceContents i {
   color: #00695C;
 }
-.div10 h3{
+#experienceContents h3{
   padding-top: 30px;
 }
-.div10 h6{
+#experienceContents h6{
   padding-top: 30px;
 }
 
-.div12 {
+#recommandationsTitle {
   width: 90%;
   margin-left: 10%;
 }
 
-.div12 h2 {
+#recommandationsTitle h2{
   color: black;
   font-size: 36px;
   border-bottom: solid 3px #00695C;
 }
 
-.div12 i {
+#recommandationsTitle i{
   font-size: 36px;
   color: #00695C;
 }
 
-.div14 {
+#recommandationsContents {
   line-height: 1.5;
   width: 90%;
   margin-left: 10%;
@@ -258,13 +258,13 @@ section {
   flex-wrap: wrap;
 }
 
-.div14 .lefty {
+#recommandationsContents .lefty {
   width: 50%;
   font-size: 18px;
   margin-top: 5%;
 }
 
-.div14 .righty {
+#recommandationsContents .righty {
   width: 50%;
   font-size: 18px;
   margin-top: 5%;
@@ -304,59 +304,36 @@ section {
    #section__one{ /*section formation */
     order: 2;
   }
+
   h2{
     font-size: 30px;
   }
+
   h3{
     font-size: 24px;
     font-weight: bold;
   }
+
   h4{
     font-size: 24px;
   }
+
   h6{
     font-size: 20px;
   }
+
   p{
     font-size: 18px;
   }
-  /*#formationTitle h2{ /*titre section formation*/
-    /* font-size: 30px;
-  }
-  .lefty h3{
-    font-size: 24px;
-    font-weight: bold;
-  }
-  .lefty h4{
-    font-size: 24px;
-  }
-  .lefty h6{
-    font-size: 20px;
-  }
-  
-  .righty h3{
-    font-size: 24px;
-    font-weight: bold;
-  }
-  .righty h4{
-    font-size: 24px;
-  }
-  .righty h6{
-    font-size: 20px;
-  }
-  .rigthty p{
-    font-size: 18px;
-  }
-   */
+
   #section__two{ /*section experience*/
     order: 3;
   }
-  /* #experienceTitle h2{ /*titre section experience*/
-    /* font-size: 30px;
-  }  */
+  
   .section__three{ /*section recommandations*/
     order: 4;
   }
+
   #recommandationsTitle h2{ /*titre section recommandations*/
      font-size: 30px;
   } 
@@ -375,17 +352,7 @@ section {
   #contact li { /*contenu contact*/
     font-size: 26px;
   }
-  /*#aboutMe h2{ /*titre A propos de moi*/
-    /* text-align: center;
-    font-size: 42px;
-  } */
-  /*#lorem p{ /*contenu A propos de moi*/
-    /* text-align: center;
-    font-size: 26px;
-  } */
-  /* #loisirsTitle h2{ 
-    font-size: 42px;
-  } */
+
   #loisirsIcons h1 i{
     font-size: 58px;
   }
