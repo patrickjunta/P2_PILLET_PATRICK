@@ -160,6 +160,7 @@ section {
 }
 #formationContents h3{
   padding-top: 30px;
+  font-weight: bold;
 }
 #formationContents h6{
   padding-top: 30px;
@@ -209,6 +210,7 @@ section {
 }
 #experienceContents h3{
   padding-top: 30px;
+  font-weight: bold;
 }
 #experienceContents h6{
   padding-top: 30px;
@@ -252,7 +254,7 @@ section {
 }
 
 @media only screen and (min-device-width : 320px) and (max-device-width: 576px) {
-  .container {
+  #container {
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -322,16 +324,9 @@ section {
     order: 5;
     width: 100%;
   }
-  aside h2{
-    text-align: center;
-    font-size: 42px;
-  }
-  aside p{
-    text-align: center;
-    font-size: 26px;
-  }
+  
   #contactContent nav ul li { /*contenu contact*/
-    font-size: 26px;
+    font-size: 18px;
   }
 
   #loisirsIcons h1 i{
@@ -346,7 +341,7 @@ section {
 
 @media screen and (min-device-width: 576px) and (max-device-width: 768px) {
   
-  .container {
+  #container {
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -362,7 +357,11 @@ section {
   header h2 {
     font-size: 44px;
   }
-  
+
+  #sidebar h2 {
+    font-size: 44px;
+  }
+
   #jumbotron img {
     display: block;
     width: 70%;
@@ -425,21 +424,16 @@ section {
     order: 5;
     width: 100%;
   }
-  #contactTitle h2{
-    font-size: 64px;
-  }
+  
   #contactContent nav ul li { /*contenu contact*/
-    font-size: 42px;
+    font-size: 24px;
+    margin: 7%;
   }
-  #aboutMe h2{ /*titre A propos de moi*/
-    font-size: 64px;
-  }
+  
   #lorem p{ /*contenu A propos de moi*/
     text-align: center;
-    font-size: 32px;
-  }
-  #loisirsTitle h2{ 
-    font-size: 64px;
+    font-size: 24px;
+    margin: 5%;
   }
   #loisirsIcons h1 i{
     font-size: 72px;
