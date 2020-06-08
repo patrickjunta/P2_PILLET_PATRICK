@@ -7,7 +7,6 @@ html {
 #sidebar {
   display: flex;
   flex-direction: column;
-  border:solid 5px salmon;
   height: 100%;
   width: 300px;
   float: left;
@@ -107,7 +106,6 @@ html {
 header {
   padding-top: 35px;
   position: sticky;
-  border:solid 5px tomato;
   width: 80%;
   margin: auto;
   line-height: 1.5;
@@ -138,7 +136,6 @@ header img{
 
 /* parent container for flexbox use below */
 .parent {
-  border:solid 5px pink;
   display: flex;
   flex-direction: column;
   justify-content: center;
