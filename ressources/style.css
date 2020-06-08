@@ -8,10 +8,11 @@ html {
   display: flex;
   flex-direction: column;
   height: 100%;
-  width: 300px;
+  width: 25%;
   float: left;
 }
 #profilePic {
+  padding-top: 10px;
   min-height: 40vh;
   display: flex;
   justify-content: center;
@@ -20,68 +21,46 @@ html {
 }
 
 #profilePic img {
-  width: 180px;
-  border-radius: 100px;
-  -webkit-border-radius: 100px;
-  -moz-border-radius: 100px;
-  -ms-border-radius: 100px;
-  -o-border-radius: 100px;
+  width: 220px;
+  border-radius: 120px;
+  -webkit-border-radius: 120px;
+  -moz-border-radius: 120px;
+  -ms-border-radius: 120px;
+  -o-border-radius: 120px;
+  border: 1px solid rgba(5, 85, 9, 0.5);
 }
-#contactTitle {
-  min-height: 15vh;
+.sidebarTitle {
+  text-transform: uppercase;
   background-color: #FFF9C4;
   color: #00695C;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 36px;
+  text-align: center;
+  padding: 10px;
+  font-size: 30px;
 }
 
 #contactContent {
-  min-height: 90vh;
+  min-height: 60vh;
   line-height: 1.5;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   background-color: #00695C;
+  padding: 20px;
 }
 
 #contactContent nav ul li {
   color: #FFF9C4;
   font-size: 16px;
+  margin: 10px;
 }
 
-#aboutMe {
-  text-align: center;
-  min-height: 15vh;
-  background-color: #FFF9C4;
-  color: #00695C;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 30px;
-}
+
 
 #lorem {
-  min-height: 90vh;
+  min-height: 80vh;
   line-height: 1.5;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  text-align: justify;
   background-color: #00695C;
   color: #FFF9C4;
   font-size: 16px;
-  padding-left: 10px;
-}
-
-#loisirsTitle {
-  min-height: 15vh;
-  background-color: #FFF9C4;
-  color: #00695C;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 30px;
+  padding: 30px;
 }
 
 #loisirsIcons {
@@ -96,6 +75,7 @@ html {
   font-size: 38px;
   color: #FFF9C4;
   border: solid 2px #FFF9C4;
+  padding: 10px;
   border-radius: 100px;
   -webkit-border-radius: 100px;
   -moz-border-radius: 100px;
@@ -125,8 +105,9 @@ header h2 {
 }
 
 header h2 span {
-  color: #00695C;
   text-decoration: underline;
+  text-decoration-color: #00695C;
+  -moz-text-decoration-color: #00695C;
 }
 
 header img{
@@ -149,7 +130,7 @@ section {
 #formationTitle {
   width: 90%;
   margin: 10%;
-  padding-top: 30px;
+  margin-bottom: -50px;
 }
 
 #formationTitle h2 {
@@ -172,7 +153,6 @@ section {
   margin: 10%;
   display: flex;
   flex-wrap: wrap;
-  padding-top: 30px;
 }
 #formationContents i {
   color: #00695C;
@@ -199,7 +179,7 @@ section {
 
 #experienceTitle {
   width: 90%;
-  margin: 5% 10%;
+  margin: -7% 10%;
 }
 
 #experienceTitle h2 {
@@ -236,7 +216,8 @@ section {
 
 #recommandationsTitle {
   width: 90%;
-  margin-left: 10%;
+  margin: 0px 10%;
+  margin-top: -5%;
 }
 
 #recommandationsTitle h2{
@@ -261,13 +242,13 @@ section {
 #recommandationsContents .lefty {
   width: 50%;
   font-size: 18px;
-  margin-top: 5%;
+  margin: 5% 0%;
 }
 
 #recommandationsContents .righty {
   width: 50%;
   font-size: 18px;
-  margin-top: 5%;
+  margin: 5% 0%;
 }
 
 @media only screen and (min-device-width : 320px) and (max-device-width: 576px) {
