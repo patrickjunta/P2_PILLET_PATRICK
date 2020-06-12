@@ -7,6 +7,22 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link rel="stylesheet" href="ressources/style.css">
   <link rel="stylesheet" href="ressources/fontawesome-free-5.13.0-web/css/all.css">
+  <link
+   media="only screen and (min-device-width : 320px) and (max-device-width: 576px)"
+   rel="stylesheet"
+   type="text/css"
+   href="ressources/mobile--style.css">
+  <link
+   media="screen and (min-device-width: 576px) and (max-device-width: 768px)"
+   rel="stylesheet"
+   type="text/css"
+   href="ressources/tablet--style.css">
+  <link
+   media="only screen and (max-width : 1224px)"
+   rel="stylesheet"
+   type="text/css"
+   href="ressources/desktop--style.css">
+
   <title>Patrick Pillet</title>
 </head>
 
@@ -18,6 +34,8 @@
     <div id="profilePic">
       <img src="ressources/images/prof pic avion.jpg" alt="profile pic">
     </div>
+
+    <section id="contact">
 
     <h2 class="sidebarTitle" id="contactTitle">Contact</h2>
     
@@ -33,6 +51,9 @@
       </nav>
     </div>
 
+  </section> <!--fin section id="contact" -->
+
+  <section id="aProposDeMoi">
       <h2 class="sidebarTitle" id="aboutMe">A PROPOS DE MOI</h2>
 
     <div id="lorem">
@@ -41,7 +62,9 @@
         si ça m'intéresse je n'hésite pas à investir temps et passion. 
         Actuellement je focusse sur l'apprentissage de HTML CSS JS</p>
     </div>
+  </section> <!--fin section id="aProposDeMoi" -->
 
+  <section id="loisirs">
       <h2 class="sidebarTitle" id="loisirsTitle">LOISIRS</h2>
 
     <div id="loisirsIcons">
@@ -49,6 +72,7 @@
       <h1><i class="fas fa-gamepad circle icon"></i></h1>
       <h1><i class="fas fa-biking circle icon"></i></h1>
     </div>
+  </section> <!--fin section id="loisirs" -->
 
     
   </aside><!-- end of aside id="sidebar"-->
@@ -66,13 +90,13 @@
     
       <section class="section__one formation" id="section__one">
 
-        <div id="formationTitle">
-          <h2><i class="fas fa-graduation-cap"></i> Formation</h2>
-        </div>
+        
+          <h2 id="formationTitle"><i class="fas fa-graduation-cap"></i> Formation</h2>
+        
     
         <div class="date" id="formationContents">
           <div class="card lefty">
-            <h6><i class="far fa-dot-circle"></i>2016 ~ 2018<br>BKK - PVG</h6>
+            <p><i class="far fa-dot-circle"></i>2016 ~ 2018<br>BKK - PVG</p>
           </div>
 
           <div class="card righty">
@@ -83,7 +107,7 @@
               Je sais dire où aller en chinois au chauffeur de taxi</p>
           </div>
           <div class="card lefty">
-            <h6><i class="fas fa-circle"></i>Mai 2020<br>Remote FR</h6>
+            <p><i class="fas fa-circle"></i>Mai 2020<br>Remote FR</p>
           </div>
           <div class="card righty">
             <h3>UNIVERSITY OF OC</h3>
@@ -99,14 +123,13 @@
       </section>
 
       <section class="section__two experience" id="section__two">
-        <div id="experienceTitle">
-          <h2><i class="fas fa-briefcase"></i> Expérience Professionelle</h2>
-        </div>
+
+          <h2 id="experienceTitle"><i class="fas fa-briefcase"></i> Expérience Professionelle</h2>
+
     
-        
         <div id="experienceContents">
           <div class="card lefty">
-            <h6><i class="far fa-dot-circle"></i> Juin ~ Septembre 2006<br>Orlando USA</h6>
+            <p><i class="far fa-dot-circle"></i> Été 2006<br>Orlando USA</p>
           </div>
           <div class="card righty">
             <h3>Disney's</h3>
@@ -116,7 +139,7 @@
               Demande moi ce que sont les<d> Hidden Micky's.</d></p>
           </div>
           <div class="card lefty">
-            <h6><i class="fas fa-circle"></i> Mai 2008 - Poste actuel<br>Paris FR</h6>
+            <p><i class="fas fa-circle"></i> 2008 - Poste actuel<br>Paris FR</p>
           </div>
           <div class="card righty">
             <h3>Airfrance</h3>
@@ -126,7 +149,7 @@
               principalement sur le Japon.</p>
           </div>
           <div class="card lefty">
-            <h6><i class="fas fa-circle"></i> 2000 ~ Poste actuel<br>Meaux FR</h6>
+            <p><i class="fas fa-circle"></i> 2000 ~ Poste actuel<br>Meaux FR</p>
           </div>
           <div class="card righty">
             <h3>Cuisinier</h3>
@@ -140,22 +163,21 @@
       </section>
 
       <section class="section__three recommandations">
-        <div id="recommandationsTitle">
-          <h2><i class="fas fa-pencil-alt"></i> Recommandations</h2>
-        </div>
-    
+        
+          <h2 id="recommandationsTitle"><i class="fas fa-pencil-alt"></i> Recommandations</h2>
+        
         <div id="recommandationsContents">
           <div class="card lefty">
-            <h3>Mickey Mouse</h3>
-            <h4>Disney GOD</h4>
-            <h5>407 939 5277</h5>
-            <h6>mickey@walt.com</h6>
+            <p>Mickey Mouse<br>
+            Disney Hero<br>
+            407 939 5277<br>
+            mickey@walt.com</p>
           </div>
           <div class="card righty">
-            <h3>Ben SMITH</h3>
-            <h4>PDG Airfrance</h4>
-            <h5>01 41 56 78 00</h5>
-            <h6>luvcanada@ac.ca</h6>
+            <p>Ben SMITH<br>
+            PDG Airfrance<br>
+            01 41 56 78 00<br>
+            luvcanada@ac.ca</p>
           </div>
         </div>
         <!--fin div 14-->

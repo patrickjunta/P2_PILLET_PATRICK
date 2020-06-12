@@ -29,7 +29,7 @@ html {
   -o-border-radius: 120px;
   border: 1px solid rgba(5, 85, 9, 0.5);
 }
-.sidebarTitle {
+aside h2 {
   text-transform: uppercase;
   background-color: #FFF9C4;
   color: #00695C;
@@ -50,8 +50,6 @@ html {
   font-size: 16px;
   margin: 10px;
 }
-
-
 
 #lorem {
   min-height: 80vh;
@@ -115,23 +113,36 @@ header img{
 }
 
 
-/* parent container for flexbox use below */
+#container {
+  display: flex;
+}
+
 .parent {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
-section {
+main section {
   width: 100%;
   line-height: 1.5;
+  display: flex;
+  flex-direction: column;
+}
+main section h2 {
+  width: 90%;
+  margin: 10%;
+  margin-bottom: -70px;
+  color: black;
+  font-size: 36px;
+  border-bottom: solid 3px #00695C;
 }
 
-#formationTitle {
+/* #formationTitle {
   width: 90%;
   margin: 10%;
   margin-bottom: -50px;
-}
+} */
 
 #formationTitle h2 {
   color: black;
@@ -152,6 +163,8 @@ section {
   width: 90%;
   margin: 10%;
   display: flex;
+  justify-content: center;
+  align-items: baseline;
   flex-wrap: wrap;
 }
 #formationContents i {
@@ -201,8 +214,9 @@ section {
   width: 90%;
   margin: 10%;
   display: flex;
+  justify-content: center;
+  align-items: baseline;
   flex-wrap: wrap;
-  padding-top: 30px;
 }
 
 #experienceContents i {
@@ -218,8 +232,8 @@ section {
 
 #recommandationsTitle {
   width: 90%;
-  margin: 0px 10%;
-  margin-top: -5%;
+  margin: 10%;
+  margin-top: -4%;
 }
 
 #recommandationsTitle h2{
@@ -236,8 +250,10 @@ section {
 #recommandationsContents {
   line-height: 1.5;
   width: 90%;
-  margin-left: 10%;
+  margin: -10% 10% 0% 10%;
   display: flex;
+  justify-content: center;
+  align-items: baseline;
   flex-wrap: wrap;
 }
 
@@ -251,202 +267,4 @@ section {
   width: 50%;
   font-size: 18px;
   margin: 5% 0%;
-}
-
-@media only screen and (min-device-width : 320px) and (max-device-width: 576px) {
-  #container {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-  }
-  header{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-  }
-  #jumbotron{ /*header avec image pour small devices*/
-    order: 1;
-  }
-  #jumbotron h1 {
-    font-size: 44px;
-  }
-  #jumbotron h2 {
-    font-size: 34px;
-  }
-  #jumbotron img {
-    display: block;
-    width: 70%;
-    margin: auto;
-    border-radius: 150px;
-    -webkit-border-radius: 150px;
-    -moz-border-radius: 150px;
-    -ms-border-radius: 150px;
-    -o-border-radius: 150px;
-  } 
-
-   #section__one{ /*section formation */
-    order: 2;
-  }
-
-  h2{
-    font-size: 30px;
-  }
-
-  h3{
-    font-size: 24px;
-    font-weight: bold;
-  }
-
-  h4{
-    font-size: 24px;
-  }
-
-  h6{
-    font-size: 20px;
-  }
-
-  p{
-    font-size: 18px;
-  }
-
-  #section__two{ /*section experience*/
-    order: 3;
-  }
-  
-  .section__three{ /*section recommandations*/
-    order: 4;
-  }
-
-  #recommandationsTitle h2{ /*titre section recommandations*/
-     font-size: 30px;
-  } 
-  #sidebar{ /*sidebar*/
-    order: 5;
-    width: 100%;
-  }
-  
-  #contactContent nav ul li { /*contenu contact*/
-    font-size: 18px;
-  }
-
-  #loisirsIcons h1 i{
-    font-size: 58px;
-  }
-  #profilePic{ /*image de la sidebar */
-    display: none;
-  }
-  
-}
-/*fin media queries small devices Smartphones (576px)*/
-
-@media screen and (min-device-width: 576px) and (max-device-width: 768px) {
-  
-  #container {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-  }
-  header{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-  }
-  header h1 {
-    font-size: 72px;
-  }
-  header h2 {
-    font-size: 44px;
-  }
-
-  #sidebar h2 {
-    font-size: 44px;
-  }
-
-  #jumbotron img {
-    display: block;
-    width: 70%;
-    margin: auto;
-    border-radius: 250px;
-    -webkit-border-radius: 250px;
-    -moz-border-radius: 250px;
-    -ms-border-radius: 250px;
-    -o-border-radius: 250px;
-} 
-
-  #jumbotron{ /*header avec image pour small devices*/
-    order: 1;
-  }
-  
-   .section__one{ /*section formation */
-    order: 2;
-  }
-  #formationTitle h2{ /*titre section formation*/
-    font-size: 44px;
-  }
-  .lefty h3{
-    font-size: 24px;
-    font-weight: bold;
-  }
-  .lefty h4{
-    font-size: 24px;
-  }
-  .lefty h6{
-    font-size: 20px;
-  }
-  
-  .righty h3{
-    font-size: 24px;
-    font-weight: bold;
-  }
-  .righty h4{
-    font-size: 24px;
-  }
-  .righty h6{
-    font-size: 20px;
-  }
-  .rigthty p{
-    font-size: 18px;
-  }
-  
-  .section__two{ /*section experience*/
-    order: 3;
-  }
-  #experienceTitle h2{ /*titre section experience*/
-    font-size: 44px;
-  }
-  .section__three{ /*section recommandations*/
-    order: 4;
-  }
-  #recommandationsTitle h2{ /*titre section recommandations*/
-    font-size: 44px;
-  }
-  #sidebar{ /*sidebar*/
-    order: 5;
-    width: 100%;
-  }
-  
-  #contactContent nav ul li { /*contenu contact*/
-    font-size: 24px;
-    margin: 7%;
-  }
-  
-  #lorem p{ /*contenu A propos de moi*/
-    text-align: center;
-    font-size: 24px;
-    margin: 5%;
-  }
-  #loisirsIcons h1 i{
-    font-size: 72px;
-  }
-  #profilePic{ /*image de la sidebar */
-    display: none;
-  } 
-}
-/*fin media queries medium devices tablets (768px)*/
-
-@media only screen  and (max-width : 1224px) {
-  /* Styles */
-  header img{
-    display: none;
-  }
 }
