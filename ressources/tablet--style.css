@@ -26,10 +26,6 @@
       width: 70%;
       margin: auto;
       border-radius: 250px;
-      -webkit-border-radius: 250px;
-      -moz-border-radius: 250px;
-      -ms-border-radius: 250px;
-      -o-border-radius: 250px;
   } 
   
     #jumbotron{ /*header avec image pour small devices*/
@@ -67,13 +63,13 @@
       font-size: 18px;
     }
     
-    .section__two{ /*section experience*/
+    #section__two{ /*section experience*/
       order: 3;
     }
     #experienceTitle h2{ /*titre section experience*/
       font-size: 44px;
     }
-    .section__three{ /*section recommandations*/
+    #section__three{ /*section recommandations*/
       order: 4;
     }
     #recommandationsTitle h2{ /*titre section recommandations*/

@@ -23,10 +23,6 @@
       width: 70%;
       margin: auto;
       border-radius: 150px;
-      -webkit-border-radius: 150px;
-      -moz-border-radius: 150px;
-      -ms-border-radius: 150px;
-      -o-border-radius: 150px;
     } 
   
      #section__one{ /*section formation */
@@ -70,7 +66,7 @@
       order: 3;
     }
     
-    .section__three{ /*section recommandations*/
+    #section__three{ /*section recommandations*/
       order: 4;
     }
   

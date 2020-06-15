@@ -201,10 +201,6 @@ main section h2 {
 #profilePic img {
   width: 220px;
   border-radius: 120px;
-  -webkit-border-radius: 120px;
-  -moz-border-radius: 120px;
-  -ms-border-radius: 120px;
-  -o-border-radius: 120px;
   border: 1px solid rgba(5, 85, 9, 0.5);
 }
 aside h2 {
@@ -253,8 +249,4 @@ aside h2 {
   border: solid 2px #FFF9C4;
   padding: 10px;
   border-radius: 100px;
-  -webkit-border-radius: 100px;
-  -moz-border-radius: 100px;
-  -ms-border-radius: 100px;
-  -o-border-radius: 100px;
 }
