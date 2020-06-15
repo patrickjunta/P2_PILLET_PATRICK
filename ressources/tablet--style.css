@@ -1,4 +1,4 @@
-@media screen and (min-device-width: 576px) and (max-device-width: 768px) {
+@media screen and (min-width: 576px) and (max-width: 768px) {
   
     #container {
       width: 100%;
@@ -94,7 +94,7 @@
       font-size: 24px;
       margin: 5%;
     }
-    #loisirsIcons h1 i{
+    #loisirsIcons i{
       font-size: 72px;
     }
     #profilePic{ /*image de la sidebar */

@@ -1,4 +1,4 @@
-@media only screen and (min-device-width : 320px) and (max-device-width: 576px) {
+@media only screen and (min-width : 320px) and (max-width: 576px) {
     #container {
       width: 100%;
       display: flex;
@@ -86,7 +86,7 @@
       font-size: 18px;
     }
   
-    #loisirsIcons h1 i{
+    #loisirsIcons i{
       font-size: 58px;
     }
     #profilePic{ /*image de la sidebar */

@@ -4,83 +4,6 @@ html {
 }
 
 
-#sidebar {
-  display: flex;
-  flex-direction: column;
-  height: 100%;
-  width: 25%;
-  float: left;
-}
-#profilePic {
-  padding-top: 10px;
-  min-height: 40vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: #00695C;
-}
-
-#profilePic img {
-  width: 220px;
-  border-radius: 120px;
-  -webkit-border-radius: 120px;
-  -moz-border-radius: 120px;
-  -ms-border-radius: 120px;
-  -o-border-radius: 120px;
-  border: 1px solid rgba(5, 85, 9, 0.5);
-}
-aside h2 {
-  text-transform: uppercase;
-  background-color: #FFF9C4;
-  color: #00695C;
-  text-align: center;
-  padding: 10px;
-  font-size: 30px;
-}
-
-#contactContent {
-  min-height: 60vh;
-  line-height: 1.5;
-  background-color: #00695C;
-  padding: 20px;
-}
-
-#contactContent nav ul li {
-  color: #FFF9C4;
-  font-size: 16px;
-  margin: 10px;
-}
-
-#paragraph {
-  min-height: 80vh;
-  line-height: 1.5;
-  text-align: justify;
-  background-color: #00695C;
-  color: #FFF9C4;
-  font-size: 16px;
-  padding: 30px;
-}
-
-#loisirsIcons {
-  min-height: 25vh;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  background-color: #00695C;
-}
-
-#loisirsIcons h1 i{
-  font-size: 38px;
-  color: #FFF9C4;
-  border: solid 2px #FFF9C4;
-  padding: 10px;
-  border-radius: 100px;
-  -webkit-border-radius: 100px;
-  -moz-border-radius: 100px;
-  -ms-border-radius: 100px;
-  -o-border-radius: 100px;
-}
-
 header {
   padding-top: 35px;
   position: sticky;
@@ -114,6 +37,7 @@ header img{
 
 #container {
   display: flex;
+  flex-direction: row-reverse;
 }
 
 #parent {
@@ -255,4 +179,82 @@ main section h2 {
   width: 50%;
   font-size: 18px;
   margin: 5% 0%;
+}
+
+
+#sidebar {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 25%;
+  float: left;
+}
+#profilePic {
+  padding-top: 10px;
+  min-height: 40vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #00695C;
+}
+
+#profilePic img {
+  width: 220px;
+  border-radius: 120px;
+  -webkit-border-radius: 120px;
+  -moz-border-radius: 120px;
+  -ms-border-radius: 120px;
+  -o-border-radius: 120px;
+  border: 1px solid rgba(5, 85, 9, 0.5);
+}
+aside h2 {
+  text-transform: uppercase;
+  background-color: #FFF9C4;
+  color: #00695C;
+  text-align: center;
+  padding: 10px;
+  font-size: 30px;
+}
+
+#contactContent {
+  min-height: 60vh;
+  line-height: 1.5;
+  background-color: #00695C;
+  padding: 20px;
+}
+
+#contactContent nav ul li {
+  color: #FFF9C4;
+  font-size: 16px;
+  margin: 10px;
+}
+
+#paragraph {
+  min-height: 80vh;
+  line-height: 1.5;
+  text-align: justify;
+  background-color: #00695C;
+  color: #FFF9C4;
+  font-size: 16px;
+  padding: 30px;
+}
+
+#loisirsIcons {
+  min-height: 25vh;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #00695C;
+}
+
+#loisirsIcons i{
+  font-size: 38px;
+  color: #FFF9C4;
+  border: solid 2px #FFF9C4;
+  padding: 10px;
+  border-radius: 100px;
+  -webkit-border-radius: 100px;
+  -moz-border-radius: 100px;
+  -ms-border-radius: 100px;
+  -o-border-radius: 100px;
 }
